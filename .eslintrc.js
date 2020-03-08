@@ -34,11 +34,9 @@ module.exports = {
     },
     '@typescript-eslint/indent': ['warn', 2],
     '@typescript-eslint/interface-name-prefix': 'error',
-    // '@typescript-eslint/member-ordering': ['warn', {'default': ["method", "constructor", "field"] }],
     '@typescript-eslint/await-thenable': 'error',
     '@typescript-eslint/member-naming': 'error',
     '@typescript-eslint/no-extra-parens': 'error',
-    //  '@typescript-eslint/no-extraneous-class':['warn',{staticOnly:true}],
     '@typescript-eslint/no-for-in-array': 'error',
     '@typescript-eslint/no-unnecessary-type-assertion': 'error',
     '@typescript-eslint/no-useless-constructor': 'error',
@@ -48,14 +46,6 @@ module.exports = {
     '@typescript-eslint/promise-function-async': 'error',
     '@typescript-eslint/restrict-plus-operands': 'error',
     '@typescript-eslint/unified-signatures': 'error',
-    // '@typescript-eslint/prefer-destructuring': [
-    //   'warn',
-    //   ,
-    //   {
-    //     array: false,
-    //     object: true,
-    //   },
-    // ],
 
     semi: [
       'error',
@@ -67,7 +57,6 @@ module.exports = {
     'member-ordering': 'always',
     'no-trailing-spaces': 'error',
     'no-irregular-whitespace': 'error',
-    // indent: ['error', 2],
     quotes: ['error', 'backtick'],
     'prefer-arrow-callback': 'error',
     'no-confusing-arrow': 'error',
@@ -96,14 +85,6 @@ module.exports = {
     'no-array-constructor': 'error',
     'array-callback-return': 'error',
     'prefer-destructuring' :'off',
-    // 'prefer-destructuring': [
-    //   'warn',
-    //   ,
-    //   {
-    //     array: false,
-    //     object: true,
-    //   },
-    // ],
     'prefer-template': 'error',
     'template-curly-spacing': ['error', 'never'],
     'no-eval': 'error',
@@ -135,16 +116,6 @@ module.exports = {
     'object-curly-spacing': 'error',
     'no-multiple-empty-lines': 'error',
     'comma-style': 'error',
-    // 'comma-dangle': [
-    //   'warn',
-    //   {
-    //     arrays: 'never',
-    //     objects: 'always-multiline',
-    //     imports: 'never',
-    //     exports: 'always',
-    //     functions: 'ignore',
-    //   },
-    // ],
 
     'no-new-wrappers': 'error',
     radix: 'error',
