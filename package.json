@@ -1,12 +1,10 @@
 {
-  "name": "typescript-starter-kit",
-  "version": "0.0.3",
+  "name": "blog-article-code",
+  "version": "0.0.0",
   "engines": {
     "node": ">10.0.0"
   },
-  "description": "Put your description here and change the name property",
-  "main": "build/app.ts",
-  "types": "build/app.d.ts",
+  "description": "A collection of code related to my blog posts, so I can post images and you can grab code.",
   "files": [
     "build/**/*.ts",
     "build/**/*.js",
@@ -25,14 +23,16 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@github.com:Rolias/ts-starter-kit.git"
+    "url": "git@github.com:/Rolias/blog-posts"
   },
   "keywords": [
     "typescript",
-    "starter-kit"
+    "starter-kit",
+    "medium",
+    "blog articles"
   ],
   "author": "Tod Gentille",
-  "license": "GPL-3.0-or-later",
+  "license": "MIT",
   "dependencies": {},
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^0.1.3",
