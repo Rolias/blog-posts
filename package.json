@@ -33,15 +33,18 @@
   ],
   "author": "Tod Gentille",
   "license": "MIT",
-  "dependencies": {},
+  "dependencies": {
+    "uuid": "^7.0.2"
+  },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^0.1.3",
     "@types/chai": "^4.2.4",
     "@types/mocha": "^5.2.7",
-    "@types/node": "^12.12.7",
+    "@types/node": "^12.12.29",
     "@types/proxyquire": "^1.3.28",
     "@types/sinon": "^7.5.0",
     "@types/sinon-chai": "^3.2.3",
+    "@types/uuid": "^7.0.0",
     "@typescript-eslint/eslint-plugin": "^2.6.1",
     "@typescript-eslint/parser": "^2.6.1",
     "chai": "^4.2.0",
@@ -55,7 +58,7 @@
     "proxyquire": "^2.1.3",
     "rimraf": "^3.0.0",
     "sinon": "^7.5.0",
-    "sinon-chai": "^3.3.0",
+    "sinon-chai": "^3.5.0",
     "ts-node": "^8.4.1",
     "typescript": "^3.7.2"
   }
