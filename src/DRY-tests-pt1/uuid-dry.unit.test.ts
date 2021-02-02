@@ -15,7 +15,7 @@ const uuidTestCases = [
   {condition: `on empty string `, value: ``, expected: false},
 ]
 
-describe('UNIT TESTS: utils module ', () => {
+describe('UNIT TESTS: uuid module ', () => {
   describe('isValidUuid() ', () => {
     uuidTestCases.forEach(test => {
       it(`returns ${test.expected} for ${test.condition}`, () => {
