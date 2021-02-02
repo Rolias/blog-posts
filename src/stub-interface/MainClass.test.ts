@@ -7,8 +7,9 @@ should()
 
 describe.only(`StubInterface tests`, () => {
   let uut: MainClass
-  const stubHelper: StubbedInstance<Helper> = stubInterface<Helper>()
+  let stubHelper: StubbedInstance<Helper>
   beforeEach(() => {
+    stubHelper = stubInterface<Helper>()
     uut = new MainClass(stubHelper)
   })
   afterEach(() => {
