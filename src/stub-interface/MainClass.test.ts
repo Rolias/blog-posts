@@ -13,8 +13,6 @@ describe.only(`StubInterface tests`, () => {
   })
   afterEach(() => {
     sinon.restore()
-    stubHelper.thing1.resetHistory()
-    stubHelper.thing2.resetHistory()
   })
   it(`thing 1 should be called once`, () => {
     uut.run()
