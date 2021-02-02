@@ -12,6 +12,7 @@
     "noUnusedParameters": true,
     "noImplicitAny": true,
     "watch": false,
+    "esModuleInterop": true,
     "strictNullChecks": true
   },
   "include": ["./**/*"],
