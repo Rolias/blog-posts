@@ -1,5 +1,5 @@
 import {Helper} from './Helper'
-export class MainClass {
+export class CatWithHat {
   private myHelper: Helper
   public constructor(helper: Helper) {
     this.myHelper = helper
