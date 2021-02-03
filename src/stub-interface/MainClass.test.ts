@@ -5,23 +5,24 @@ import {Helper} from './Helper'
 
 should()
 
+function testSetup(): StubbedInstance<Helper> {
+  const stubHelper = stubInterface<Helper>()
+  const uut = new MainClass(stubHelper)
+  uut.run()
+  return stubHelper
+}
+
 describe.only(`StubInterface tests`, () => {
-  let uut: MainClass
-  let stubHelper: StubbedInstance<Helper>
-  beforeEach(() => {
-    stubHelper = stubInterface<Helper>()
-    uut = new MainClass(stubHelper)
-  })
   afterEach(() => {
     sinon.restore()
   })
   it(`thing 1 should be called once`, () => {
-    uut.run()
+    const stubHelper = testSetup()
     stubHelper.thing1.callCount.should.eql(1)
   })
 
   it(`thing 2 should be called once`, () => {
-    uut.run()
+    const stubHelper = testSetup()
     stubHelper.thing2.callCount.should.eql(1)
   })
 })
