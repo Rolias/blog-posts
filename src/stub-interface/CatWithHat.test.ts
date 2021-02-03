@@ -1,21 +1,18 @@
 import {should} from 'chai'
-import sinon, {StubbedInstance, stubInterface} from 'ts-sinon'
-import {MainClass} from './MainClass'
+import {StubbedInstance, stubInterface} from 'ts-sinon'
+import {CatWithHat} from './CatWithHat'
 import {Helper} from './Helper'
 
 should()
 
 function testSetup(): StubbedInstance<Helper> {
   const stubHelper = stubInterface<Helper>()
-  const uut = new MainClass(stubHelper)
+  const uut = new CatWithHat(stubHelper)
   uut.run()
   return stubHelper
 }
 
 describe.only(`StubInterface tests`, () => {
-  afterEach(() => {
-    sinon.restore()
-  })
   it(`thing 1 should be called once`, () => {
     const stubHelper = testSetup()
     stubHelper.thing1.callCount.should.eql(1)
