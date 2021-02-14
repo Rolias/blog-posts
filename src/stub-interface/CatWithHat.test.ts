@@ -12,7 +12,7 @@ function testSetup(): StubbedInstance<Helper> {
   return stubHelper
 }
 
-describe.only(`StubInterface tests`, () => {
+describe(`StubInterface tests`, () => {
   it(`thing 1 should be called once`, () => {
     const stubHelper = testSetup()
     stubHelper.thing1.callCount.should.eql(1)
