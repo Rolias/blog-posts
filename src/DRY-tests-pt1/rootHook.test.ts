@@ -3,5 +3,5 @@
 // Root hook plugs are: https://mochajs.org/#root-hook-plugins
 
 before(() => {
-  console.log(`🐞 This before runs 🐞`)
+  console.log(`🐞 This before  root hook in src/DRY-tests-pt1/rootHook.test.ts runs 🐞`)
 })

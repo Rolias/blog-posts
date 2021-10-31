@@ -4,3 +4,4 @@ build
 !.eslintrc.js
 !.gitignore
 !.mocharc.js
+!.vscode
