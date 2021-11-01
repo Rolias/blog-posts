@@ -5,7 +5,13 @@ module.exports = {
   "timeout": 5000,
   "require": [
     "ts-node/register",
-    "source-map-support/register"
+    "source-map-support/register",
+    "chai",
+    "sinon",
+    "sinon-chai",
+    `chai-as-promised`,
+    'chai/register-should',
+    `test/mocha-init`
     ],
     recursive: true,
 }

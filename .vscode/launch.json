@@ -22,9 +22,9 @@
         "--timeout",
         "999999",
         "--config",
-        ".mocharc.js",
+        "test/.mocharc.js",
         "--colors",
-        "${workspaceFolder}/src"
+        "**/*.test.ts"
       ],
       "internalConsoleOptions": "openOnSessionStart",
       "name": "Mocha Tests",
@@ -45,7 +45,7 @@
         "999999",
         "--colors",
         "--config",
-        ".mocharc.js",
+        "test/.mocharc.js",
         "${relativeFile}"
       ],
       "internalConsoleOptions": "openOnSessionStart",

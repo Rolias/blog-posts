@@ -10,7 +10,7 @@
     "prebuild": " rimraf build/*",
     "build": "tsc",
     "postbuild": "",
-    "test": "mocha ",
+    "test": "mocha --config test/.mocharc.js **/*.test.ts",
     "test:cov": "nyc mocha ",
     "test:unit": "npm --silent run test -- -- -g UNIT",
     "test:int": "npm run test -- -- -g INTEGRATION"
@@ -43,6 +43,7 @@
     "@typescript-eslint/eslint-plugin": "^5.2.0",
     "@typescript-eslint/parser": "^5.2.0",
     "chai": "^4.3.4",
+    "chai-as-promised": "^7.1.1",
     "eslint": "^8.1.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",

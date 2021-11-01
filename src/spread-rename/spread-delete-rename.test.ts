@@ -17,7 +17,7 @@ type FinalProps = UnchangedProps & {
 }
 const renameZed = ({z, ...remainder}: AfterRemoveProps): FinalProps => ({zed: z, ...remainder})
 
-describe.only(`spread and union types`, () => {
+describe(`spread and union types`, () => {
   it(`test remove`, () => {
     const myLetters = {
       a: `eh`,

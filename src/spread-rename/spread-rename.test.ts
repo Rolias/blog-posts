@@ -8,7 +8,7 @@ type RenamedZed = Omit<Letters, 'z'> & {
 }
 const renameZed = ({z, ...remainder}: Letters): RenamedZed => ({zed: z, ...remainder})
 
-describe.only(`spread, rest, and rename`, () => {
+describe(`spread, rest, and rename`, () => {
   it(`test renameZed()`, () => {
     const myLetters = {
       a: `eh`,
