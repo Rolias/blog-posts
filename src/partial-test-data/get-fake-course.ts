@@ -9,6 +9,18 @@ export interface Course {
   dueDate: Date
 }
 
+function getFakeCourseNoPartial({id, name}: {id?: string; name?: string}): Course {
+  const fakeCourse: Course = {
+    id: id ?? randomUUID(),
+    name: name ?? faker.random.words(3),
+    status: `delivered`,
+    length: faker.datatype.number(),
+    notes: faker.lorem.sentence(25),
+    dueDate: new Date(),
+  }
+  return fakeCourse
+}
+
 function getFakeCourse(course?: Partial<Course>): Course {
   const fakeCourse: Course = {
     id: course?.id ?? randomUUID(),
@@ -24,6 +36,6 @@ function getFakeCourse(course?: Partial<Course>): Course {
 describe(`Using a Partial Course plan allows you to `, () => {
   it(`have a test where you specify nothing`, () => {
     const fakeCourse = getFakeCourse()
-    fakeCourse.
+    getFakeCourseNoPartial()
   })
 })
