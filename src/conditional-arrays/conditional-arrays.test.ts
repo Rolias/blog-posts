@@ -14,19 +14,6 @@ function getDisplayData(): string {
 function getDisplayAlwaysStuff(): string {
   return `I always show up`
 }
-function getThing1() {
-  return `1`
-}
-function getThing2() {
-  return `2`
-}
-function getThing3() {
-  return '3'
-}
-
-function setupArray(): string[] {
-  return [getThing1(), getThing2(), getThing3()]
-}
 
 function testSetupWithIf(inEditMode: boolean): string[] {
   const arrayOfStuff = [getDisplayAlwaysStuff()]
@@ -36,7 +23,6 @@ function testSetupWithIf(inEditMode: boolean): string[] {
   } else {
     arrayOfStuff.push(getDisplayData())
   }
-  setupArray()
   return arrayOfStuff
 }
 
